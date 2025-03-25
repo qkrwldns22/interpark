@@ -1,9 +1,9 @@
-.body{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    outline: 0px;
-    max-width: 1920px;
+.body {
+    margin: 0 auto; /* 화면 중앙 정렬 */
+    padding: 0;
+    border: 0;
+    outline: 0;
+    max-width: 1400px; /* 최대 너비 설정 */
 }
 
 .header{
@@ -186,7 +186,6 @@
 
 .eventbanner {
     position: relative;
-    min-width: 1024px;
     margin: 0 auto;
     padding: 3rem 0 5rem;
     overflow: hidden;
@@ -932,7 +931,6 @@ h3 {
 .footer{
     margin-top: 50px;
     overflow: hidden;
-    min-width: 1280px;
     background-color: rgb(255, 255, 255);
     border-top: 1px solid rgb(230, 230, 230);
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "맑은 고딕", "Malgun Gothic", 돋움, Dotum, Helvetica, "Apple SD Gothic Neo", sans-serif;
@@ -1076,4 +1074,13 @@ h3 {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+}
+
+/* 일정 크기 이상일 때 좌우 마진 추가 */
+@media (min-width: 1600px) {
+    .body {
+        max-width: 1400px; /* 최대 너비 고정 */
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
