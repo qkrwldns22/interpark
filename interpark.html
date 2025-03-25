@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>인터파크</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="search">
+                <div class="search-left">
+                    <a href="interpark.html"><img src="img/logo.png"></a>
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="쇼핑/도서는 인터파크에서 노출 종료합니다.">
+                        <button class="search-button">
+                            <img src="img/glass.png" alt="Search Icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="search-right">
+                    <ul class="mymenu">
+                        <li>
+                            <a href="https://accounts.interpark.com/login/form">로그인</a>
+                        </li>
+                        <li>
+                            <a href="https://member.interpark.com/signup?join_site_tp=20&join_ipp_id=&smid1=header&smid2=logout&smid3=signup">회원가입</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">MY인터파크 ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">쿠폰</a></li>
+                                <li><a href="#">주문 내역</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="mainnav">
+                <ul class="mainmenu">
+                    <li>
+                        <a href="https://mtravel.interpark.com/home">
+                            <img src="img/nav1.avif"><span>투어</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://tickets.interpark.com/">
+                            <img src="img/nav2.avif"><span>티켓</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://travel.interpark.com/home/customer/board/notice/common/detail/12677">
+                            <img src="img/nav3.avif"><span>긴급공지</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://triple.guide/articles/135c500c-2269-4ae1-af96-9a52047616f3?_triple_no_navbar&_triple_swipe_to_close?utm_source=interpark_mo&utm_medium=service&utm_campaign=interpark_tour_mainhome&utm_term=main_top_menu">
+                            <img src="img/nav4.avif"><span>여행준비</span>
+                            <p>일본특가</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://events.interpark.com/exhibition?exhibitionCode=240717001">
+                            <img src="img/nav5.avif"><span>상반기결산</span>
+                            <p>HOT</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://travel.interpark.com/home/customer/board/notice/common/detail/12677">
+                            <span>이제 쇼핑/도서는 인터파크에서 노출하지 않습니다.</span>
+                        </a>
+                    </li>
+                </ul> 
+            </nav>
+        </div>
+        <div class="main">
+            <div class="mainal">
+                <a href="https://travel.interpark.com/home/customer/board/notice/tour/detail/12687">
+                    <div class="content-wrapper">
+                        <h3>200% 환불되는 인터파크 투어 <span>안심보장제 약관</span>이 추가 되었어요. 안심하고 구매하세요.</h3>
+                        <p>안심보장제도란? ></p>
+                    </div>
+                </a>
+            </div>
+            <section class="eventbanner">
+                <div class="slides">
+                    <a href="https://travel.interpark.com/home/customer/board/notice/common/detail/12671">
+                        <img src="img/evb1.avif">
+                    </a>
+                    <a href="https://events.interpark.com/exhibition?exhibitionCode=240717002">
+                        <img src="img/evb2.avif">
+                    </a>
+                    <a href="https://events.interpark.com/exhibition?exhibitionCode=240709008">
+                        <img src="img/evb3.avif">
+                    </a>
+                    <a href="https://events.interpark.com/exhibition?exhibitionCode=220421019">
+                        <img src="img/evb4.avif">
+                    </a>
+                    <a href="https://events.interpark.com/exhibition?exhibitionCode=240319001">
+                        <img src="img/evb5.avif">
+                    </a>
+                    <a href="https://tickets.interpark.com/contents/promotion/nol_promotion?mchtNo=INTERPARK_TICKET&mchtDtlNo=00&eventCode=NOIYQ">
+                        <img src="img/evb6.avif">
+                    </a>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </section>
+            <section class="tourwrap">
+                <div class="tourheader">
+                    <h1>투어 특가</h1>
+                    <h3>해외여행은 인터파크다</h3>
+                </div>
+                <div class="tourmenu">
+                    <ul class="swiper-wrapper">
+                        <li><button id="soldOutBtn">품절임박</button></li>
+                        <li><button id="packageBtn">패키지</button></li>
+                        <li><button>국내숙소</button></li>
+                        <li><button>해외숙소</button></li>
+                        <li><button>투어・티켓</button></li>
+                    </ul>
+                    <div class="tslides" id="slider1">
+                        <div class="tslider-wrapper">
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/hotel/goods?hotelCD=1001576149">
+                                    <img src="img/tour1.avif" alt="이미지 1">
+                                    <div class="caption">
+                                        <span class="tag">푸꾸옥</span>
+                                        <h3>[Upgrade] 예약시 룸 업그레이드&망고아이스크림 제공</h3>
+                                        <p>프리미어 빌리지 푸꾸옥 리조트 매니지드 바이 아코르호텔</p>
+                                        <p class="price">229,483원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/checkinnow/goods/GY0002351085?startdate=20240901&enddate=20240902&roomOptions=0%5E2%5E0%5E&npprmaxsort=min">
+                                    <img src="img/tour2.jpg" alt="이미지 2">
+                                    <div class="caption">
+                                        <span class="tag">강원</span>
+                                        <h3>F type. FLAT STUDIO</h3>
+                                        <p>UH FLAT The 속초</p>
+                                        <p class="price">55,000원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/tour/goods?baseGoodsCd=A1021444">
+                                    <img src="img/tour3.avif" alt="이미지 3">
+                                    <div class="caption">
+                                        <span class="tag">국적기직항</span>
+                                        <h3>5성 신상호텔, 망고도시락 제공</h3>
+                                        <p>하노이+하롱베이 엔또 3박4일 [4성▶5성UP]</p>
+                                        <p class="price">368,503원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/hotel/goods?hotelCD=1001609009">
+                                    <img src="img/tour4.avif" alt="이미지 4">
+                                    <div class="caption">
+                                        <span class="tag">나트랑</span>
+                                        <h3>공항에서 20분 거리에 위치한 깜란 롱비치 5성급 럭셔리...</h3>
+                                        <p>[전객식풀빌라] 멜리아 빈펄 깜란 비치 리조트</p>
+                                        <p class="price">210,197원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/tour/goods?baseGoodsCd=A1041969">
+                                    <img src="img/tour5.jpg" alt="이미지 5">
+                                    <div class="caption">
+                                        <span class="tag">국적기 직항</span>
+                                        <h3>아시아나항공 이용, 5성급 호텔 UP</h3>
+                                        <p>다낭/호이안 5일/6일 국적기 이용, 멜리아 빈펄리버 리버뷰 업그레이드</p>
+                                        <p class="price">210,197원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/checkinnow/goods/GY0002197541?startdate=20240818&enddate=20240819&roomOptions=0%5E2%5E0%5E&npprmaxsort=min">
+                                    <img src="img/tour6.jpg" alt="이미지 6">
+                                    <div class="caption">
+                                        <span class="tag">서울</span>
+                                        <h3>페어몬트 룸 킹베드 (무료 조식 2인)</h3>
+                                        <p>페어몬트 앰배서더 서울</p>
+                                        <p class="price">346,500원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="tprev">&#10094;</button>
+                        <button class="tnext">&#10095;</button>
+                    </div>
+                    <div class="tslides" id="slider2" style="display:none;">
+                        <div class="tslider-wrapper2">
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/hotel/goods?hotelCD=1001576149">
+                                    <img src="img/tour2-1.jpg" alt="이미지 1">
+                                    <div class="caption">
+                                        <span class="tag">패션위크홀릭</span>
+                                        <h3>윤송아 작가 동행! 밀라노 패션위크쇼 VIP 티켓 포함</h3>
+                                        <p>[패션위크홀릭]밀라노7일, 윤송아 작가 프로젝트, 패션,아트를 입다(라이트ver.)</p>
+                                        <p class="price">6,690,000원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/checkinnow/goods/GY0002351085?startdate=20240901&enddate=20240902&roomOptions=0%5E2%5E0%5E&npprmaxsort=min">
+                                    <img src="img/tour2-2.jpg" alt="이미지 2">
+                                    <div class="caption">
+                                        <span class="tag">자유여행</span>
+                                        <h3>부산출발 다낭, 왕복픽업포함, 자유여행</h3>
+                                        <p>다낭 4일, 부산출발, 자유여행, 뉴월드 호이아나, 오션뷰 업그레이드</p>
+                                        <p class="price">739,000원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/tour/goods?baseGoodsCd=A1021444">
+                                    <img src="img/tour2-3.jpg" alt="이미지 3">
+                                    <div class="caption">
+                                        <span class="tag">국적기직항</span>
+                                        <h3>대한항공 이용, 자유일정 포함</h3>
+                                        <p>[베스트셀러][두바이/아부다비 5일]대한항공,월드체인 하얏트 리젠시,노쇼핑</p>
+                                        <p class="price">1,099,000원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/hotel/goods?hotelCD=1001609009">
+                                    <img src="img/tour2-4.avif" alt="이미지 4">
+                                    <div class="caption">
+                                        <span class="tag">한정특가</span>
+                                        <h3>바티칸 내부관광, 아울렛 자유쇼핑 포함</h3>
+                                        <p>■파격특가■ MODE 즐기자, 이탈리아 완전 일주 9일 <바티칸 내부ㅣ피사의 사탑ㅣ아울렛 자유쇼핑></p>
+                                        <p class="price">1,939,030원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/tour/goods?baseGoodsCd=A1041969">
+                                    <img src="img/tour2-5.png" alt="이미지 5">
+                                    <div class="caption">
+                                        <span class="tag">인기상품</span>
+                                        <h3>아쿠아스파, 옵션BIG4, 간식 포함</h3>
+                                        <p>[베트남ONE픽][아쿠아스파+옵션BIG4+간식] 나트랑1박X달랏2박 3박5일 [4성호텔]</p>
+                                        <p class="price">425,442원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tslide">
+                                <a href="https://travel.interpark.com/checkinnow/goods/GY0002197541?startdate=20240818&enddate=20240819&roomOptions=0%5E2%5E0%5E&npprmaxsort=min">
+                                    <img src="img/tour2-6.avif" alt="이미지 6">
+                                    <div class="caption">
+                                        <span class="tag">인기상품</span>
+                                        <h3>PIC와 코럴오션리조트 부대시설/식사 이용 가능</h3>
+                                        <p>★사이판플렉스★켄싱턴 호텔 로얄디럭스룸 4일[전일정호텔식]</p>
+                                        <p class="price">1,182,430원~</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="tprev">&#10094;</button>
+                        <button class="tnext">&#10095;</button>
+                    </div>
+                    <div class="tourhomebtn">
+                        <button><a href="https://mtravel.interpark.com/home">투어 홈 바로가기 &#10095;</a></button>
+                    </div>
+                </div>
+            </section>
+            <section class="tripwrap">
+                <div class="triptitle">
+                    <div class="titlebox">
+                        <div class="tboxicon">
+                            <img src="img/tripicon1.png">
+                        </div>
+                        <a href="https://events.interpark.com/exhibition?exhibitionCode=231128007" class="ticon2">
+                            <img src="img/tripicon2.png">
+                        </a>
+                    </div>
+                    <div class="titlebox2">
+                        <h3>누구와 떠나도 안심이 되는 프리미엄 패키지</h3>
+                    </div>
+                </div>
+                <div class="pslider-container">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="img/wtour1.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W아이</span>
+                            <div class="product-info">
+                                <h3>[베스트셀러/W트립/4인 패밀리팩] 괌 4일 PIC, 골드패스 제공</h3>
+                                <p>4박5일 · 인천 출발 · 진에어 · 노쇼핑</p>
+                                <div class="price">889,000원~</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/wtour2.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W아이</span>
+                            <div class="product-info">
+                                <h3>[베스트셀러/W트립/4인 패밀리팩] 사이판 5일, 액티비티천국 PIC 리조트, 골드카드_티웨이항공</h3>
+                                <p>4박5일 · 인천 출발 · 타웨이항공 · 노쇼핑</p>
+                                <div class="price">649,000원~</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/wtour3.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W아이</span>
+                            <div class="product-info">
+                                <h3>[W트립] 나트랑 5일, 셀렉텀노아, 올인클루시브, 스파 1회 포함</h3>
+                                <p>3박5일 · 인천 출발 · 비엣젯 항공 · 노쇼핑</p>
+                                <div class="price">819,000원~</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/wtour4.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W가족</span>
+                            <div class="product-info">
+                                <h3>[W트립] 나트랑 5일, 부산출발, 메리어트 리조트, 빈원더스포함 자유여행</h3>
+                                <p>3박5일 · 부산 출발 · 비엣젯 항공 · 노쇼핑</p>
+                                <div class="price">640,000원~</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/wtour5.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W친구/연인</span>
+                            <div class="product-info">
+                                <h3>[W트립] 발리 7일, 우붓 풀빌라 2박 포함, 바투르 지프투어</h3>
+                                <p>5박7일 · 인천 출발 · 가루다인도네시아 · 쇼핑3회</p>
+                                <div class="price">2,290,000원~</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/wtour6.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W부모님</span>
+                            <div class="product-info">
+                                <h3>[W트립] 방콕/파타야 5일, 부산출발 부모님과함께, 추가비용 NO! 전일정 5성급숙박</h3>
+                                <p>3박5일 · 부산 출발 · 진에어 · 노쇼핑</p>
+                                <div class="price">859,000원~</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <img src="img/wtour7.jpg" alt="스페인/포르투갈 여행">
+                            <span class="badge">W아이</span>
+                            <div class="product-info">
+                                <h3>[베스트셀러/W트립]스페인/포르투갈10일,3대자유시간,최적의동선,여유플러스,터키항공</h3>
+                                <p>7박10일 · 인천 출발 · 카타르항공 · 노쇼핑</p>
+                                <div class="price">2,099,000원~</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="pprev">&#10094;</button>
+                    <button class="pnext">&#10095;</button>
+                </div>
+                <div class="wtripbtn">
+                    <button><a href="https://travel.interpark.com/tour/search?category=package&q=W%ED%8A%B8%EB%A6%BD&domain=r&startDate=&endDate=&departure=%EC%B6%9C%EB%B0%9C%EC%A7%80+%EC%A0%84%EC%B2%B4">W트립 상품 더보기 &#10095;</a></button>
+                </div>
+            </section>
+            <section class="ticketrank">
+                <div class="ranktitle">
+                    <h2>티켓 랭킹</h2>
+                    <p>오늘 뭐볼까? 지금 HOT한 공연</p>
+                    <ul class="tswiper-wrapper">
+                        <li><button id="musical-btn">뮤지컬</button></li>
+                        <li><button id="concert-btn">콘서트</button></li>
+                        <li><button id="sports-btn">스포츠</button></li>
+                        <li><button id="exhibition-btn">전시/행사</button></li>
+                        <li><button id="classical-btn">클래식/무용</button></li>
+                        <li><button id="family-btn">아동/가족</button></li>
+                        <li><button id="theater-btn">연극</button></li>
+                        <li><button id="leisure-btn">레저/캠핑</button></li>
+                    </ul>
+                </div>
+                <div class="rankslide">
+                    <div class="rankslides-wrapper">
+                        <div class="rankslides">
+                            <a href="https://tickets.interpark.com/goods/24012176">
+                                <img src="img/rank1.gif">
+                                <h2>뮤지컬 <시카고> - 광주</h2>
+                                <p id="rp1">광주예술의전당 대극장</p>
+                                <p id="rp2">2024.10.11 ~ 2024.10.12</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24010223">
+                                <img src="img/rank2.gif">
+                                <h2>뮤지컬 <킹키부츠></h2>
+                                <p id="rp1">블루스퀘어 신한카드홀</p>
+                                <p id="rp2">2024.09.11 ~ 2024.11.10</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24011991">
+                                <img src="img/rank3.gif">
+                                <h2>뮤지컬 <시카고> - 창원</h2>
+                                <p id="rp1">창원 성산아트홀 대극장</p>
+                                <p id="rp2">2024.10.25 ~ 2024.10.27</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24007345">
+                                <img src="img/rank4.gif">
+                                <h2>뮤지컬 <베르사유의 장미></h2>
+                                <p id="rp1">충무아트센터 대극장</p>
+                                <p id="rp2">2024.07.16 ~ 2024.10.13</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24005266">
+                                <img src="img/rank5.gif">
+                                <h2>뮤지컬 <시카고></h2>
+                                <p id="rp1">디큐브 링크아트센터</p>
+                                <p id="rp2">2024.06.07 ~ 2024.09.29</p>
+                                <p id="rp4">좌석우위</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24006851">
+                                <img src="img/rank6.gif">
+                                <h2>뮤지컬 <하데스타운> 한국 공연</h2>
+                                <p id="rp1">샤롯데어터</p>
+                                <p id="rp2">2024.07.12 ~ 2024.10.06</p>
+                                <p id="rp4">좌석우위</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24011231">
+                                <img src="img/rank7.gif">
+                                <h2>뮤지컬 <빈센트 반 고흐></h2>
+                                <p id="rp1">인터파크 서경스퀘어 스콘 1관</p>
+                                <p id="rp2">2024.09.07 ~ 2024.12.01</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/contents/ranking?genre=MUSICAL" class="center-content">
+                                <img src="img/arrow-icon.png" id="allview">
+                                <h3>전체보기</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="rprev">&#10094;</button>
+                    <button class="rnext">&#10095;</button>
+                </div>
+                <div class="rankslide2">
+                    <div class="rankslides-wrapper2">
+                        <div class="rankslides2">
+                            <a href="https://tickets.interpark.com/goods/24012456">
+                                <img src="img/rank2-1.gif">
+                                <h2>2024 YOON SAN-HA FANCON ［Dusk Till Dawn］ in Seoul</h2>
+                                <p id="rp1">블루스퀘어 마스터카드홀</p>
+                                <p id="rp2">2024.10.05 ~2024.10.06</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24012375">
+                                <img src="img/rank2-2.gif">
+                                <h2>LEE MINHYUK 2024 HUTAZONE ［24/7]</h2>
+                                <p id="rp1">블루스퀘어 마스터카드홀</p>
+                                <p id="rp2">2024.09.21 ~2024.09.22</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/P0003997">
+                                <img src="img/rank2-3.gif">
+                                <h2>2024 이적 콘서트 〈이적의 노래들〉</h2>
+                                <p id="rp1">세종문화회관 대극장</p>
+                                <p id="rp2">2024.10.17 ~2024.10.20</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24010841#">
+                                <img src="img/rank2-4.gif">
+                                <h2>2024 ZEROBASEONE THE FIRST TOUR ［TIMELESS WORLD］ IN SEOUL</h2>
+                                <p id="rp1">KSPO DOME</p>
+                                <p id="rp2">2024.09.20 ~2024.09.22</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24009992#">
+                                <img src="img/rank2-5.gif">
+                                <h2>2024 ＆TEAM CONCERT TOUR ‘SECOND TO NONE’ IN SEOUL</h2>
+                                <p id="rp1">고려대학교 화정체육관</p>
+                                <p id="rp2">2024.08.30 ~2024.08.31</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24012107">
+                                <img src="img/rank2-6.gif">
+                                <h2>KEN KAMIKITA 10th Anniversary Live in Seoul</h2>
+                                <p id="rp1">노들섬 라이브하우스</p>
+                                <p id="rp2">2024.10.24 ~ 2024.10.24</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/goods/24011941">
+                                <img src="img/rank2-7.gif">
+                                <h2>Naniwa Danshi ASIA TOUR 2024+2025 ‘+Alpha’</h2>
+                                <p id="rp1">인스파이어 아레나</p>
+                                <p id="rp2">2025.01.11 ~2025.01.12</p>
+                                <p id="rp3">단독판매</p>
+                            </a>
+                            <a href="https://tickets.interpark.com/contents/ranking?genre=MUSICAL" class="center-content">
+                                <img src="img/arrow-icon.png" id="allview">
+                                <h3>전체보기</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="rprev">&#10094;</button>
+                    <button class="rnext">&#10095;</button>
+                </div>
+                <div class="rankhomebtn">
+                    <button><a href="https://tickets.interpark.com/">티켓 홈 바로가기 &#10095;</a></button>
+                </div>
+            </section>
+            <section class="interparklive">
+                <div class="livetitle">
+                    <img src="img/livelogo.svg">
+                </div>
+                <div class="liveslide">
+                    <ul class="liveslides">
+                        <li class="slide-item">
+                            <img src="img/live1.png" alt="슬라이드 1">
+                            <div class="slide-content">
+                                <span class="label">방송예정</span>
+                                <h3>[금도끼딜] 국내 숙소 특가 최대 94% 할인! 3만원대~</h3>
+                                <span class="date">09월 03일 (화)</span>
+                                <span class="time">11:00</span>
+                            </div>
+                        </li>
+                        <li class="slide-item">
+                            <img src="img/live2.jpg" alt="슬라이드 2">
+                            <div class="slide-content">
+                                <span class="label">방송예정</span>
+                                <h3>[인싸찻X제주항공] 인터파크에서 항공권 싸게 사실 분 🙋‍♂️ 제주항...</h3>
+                                <span class="date">09월 05일 (목)</span>
+                                <span class="time">11:00</span>
+                            </div>
+                        </li>
+                        <li class="slide-item">
+                            <img src="img/live3.png" alt="슬라이드 2">
+                            <div class="slide-content">
+                                <span class="label">방송예정</span>
+                                <h3>[인싸찻X이스타항공] 동남아/일본/대만/중국 노선 라이브 특가</h3>
+                                <span class="date">09월 10일 (화)</span>
+                                <span class="time">11:00</span>
+                            </div>
+                        </li>
+                        <li class="slide-item">
+                            <img src="img/live4.jpg" alt="슬라이드 2">
+                            <div class="slide-content">
+                                <span class="label">방송예정</span>
+                                <h3>[인싸찻X이스타항공] 동남아/일본/대만/중국 노선 라이브 특가</h3>
+                                <span class="date">09월 10일 (화)</span>
+                                <span class="time">11:00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="arrow left">&lt;</button>
+                    <button class="arrow right">&gt;</button>
+                </div>
+                <div class="livegobtn">
+                    <button><a href="https://live.interpark.com/">인터파크 라이브 바로가기 &#10095;</a></button>
+                </div>
+            </section>            
+        </div>
+        <footer class="footer">
+            <div class="shortcutmenu">
+                <ul class="shortcut-menu">
+                    <li>
+                        <a href="https://interparktriple.com/" target="_blank">
+                            회사소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://m.interpark.com/terms.html#agree" target="_blank">
+                            이용약관
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://m.interpark.com/terms.html#protect_privacy" target="_blank" id="bold">
+                            개인정보처리방침
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://m.interpark.com/terms.html#location_terms" target="_blank">
+                            위치기반서비스 이용약관
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://help.interpark.com/tour/terms" target="_blank">
+                            여행약관
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://travel.interpark.com/home/customer/board/notice/tour/detail/10638" target="_blank">
+                            여행자보험 가입내역
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ticket.interpark.com/TiKi/Info/ENTInfo.asp?info=c_info_20" target="_blank">
+                            티켓판매안내
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://travel.interpark.com/home/customer/board/notice/tour" target="_blank">
+                            공지사항
+                        </a>
+                    </li>
+                    <li class="fmenu-item">
+                        고객센터&darr;
+                        <div class="fsubmenu">
+                            <a href="https://help.interpark.com/tour" target="_blank">투어 고객센터</a>
+                            <a href="https://help.interpark.com/ticket" target="_blank">티켓 고객센터</a>
+                        </div>
+                    </li>
+                    <li class="fmenu-item">
+                        Language&darr;
+                        <div class="fsubmenu">
+                            <a href="https://www.interpark.com/?gateTp=1" target="_blank">Korean</a>
+                            <a href="https://www.globalinterpark.com/en" target="_blank">English</a>
+                            <a href="https://www.globalinterpark.com/ja" target="_blank">Japanese</a>
+                            <a href="https://www.globalinterpark.com/zh" target="_blank">Chinese</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="company-license">
+                <div class="license1">
+                    <h2 class="company-title">
+                        (주)인터파크트리플
+                    </h2>
+                    <div class="company-text">
+                        <div>주소 서울특별시 서초구 강남대로 447</div>
+                        <div>사업자등록번호 824-81-02515 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8248102515&apv_perm_no=" target="_blank" class="companya">사업자정보확인</a></div>
+                        <div>통신판매업신고 2024-서울서초-2319</div>
+                        <div>관광사업증 등록번호 : 제2024-000018호</div>
+                        <div>호스팅서비스제공자 (주)인터파크트리플｜대표이사 최휘영</div>
+                    </div>
+                </div>
+                <div class="license2">
+                    <h2 class="company-title">
+                        고객센터
+                    </h2>
+                    <div class="company-text2">
+                        <div>
+                            <a href="tel:1588-3443" class="company-license__ContactLink-sc-c0ef972b-4">투어<!-- -->1588-3443</a>
+                            <a href="tel:1544-1555" class="company-license__ContactLink-sc-c0ef972b-4">티켓<!-- -->1544-1555</a>
+                        </div>
+                        <div>
+                            <a href="tel:02-830-8295" class="company-license__ContactLink-sc-c0ef972b-4">팩스<!-- -->02-830-8295</a>
+                            <a href="mailto:helpdesk@interparktriple.com" class="company-license__ContactLink-sc-c0ef972b-4">이메일<!-- -->helpdesk@interparktriple.com</a>
+                        </div>
+                        <div>
+                            <a href="tel:02-3479-4399" class="company-license__ContactLink-sc-c0ef972b-4">해외항공<!-- -->02-3479-4399</a>
+                            <a href="tel:02-3479-4340" class="company-license__ContactLink-sc-c0ef972b-4">국내항공<!-- -->02-3479-4340</a>
+                        </div>
+                        <div>
+                            <a href="https://accounts.interpark.com/login/form" target="_blank" class="companya">1:1문의</a>
+                            <a href="https://help.interpark.com/ticket/inquiry" target="_blank" class="companya">티켓 1:1문의</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="license3">
+                    <h2 class="company-title">
+                        전자금융거래 분쟁처리 담당정보
+                    </h2>
+                    <div class="company-text">
+                        <div>
+                            <a href="tel:1588-3443" class="company-license__ContactLink-sc-c0ef972b-4">투어<!-- -->1588-3443</a>
+                            <a href="tel:1544-1555" class="company-license__ContactLink-sc-c0ef972b-4">티켓<!-- -->1544-1555</a>
+                        </div>
+                        <div>
+                            <a href="tel:02-830-8295" class="company-license__ContactLink-sc-c0ef972b-4">팩스<!-- -->02-830-8295</a>
+                            <a href="mailto:helpdesk@interparktriple.com" class="company-license__ContactLink-sc-c0ef972b-4">이메일<!-- -->helpdesk@interparktriple.com</a>
+                        </div>
+                        <div>
+                            <a href="mailto:cpo@interparktriple.com" class="company-license__ContactLink-sc-c0ef972b-4 jnXoJe">개인정보보호책임자<!-- -->cpo@interparktriple.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company-policy">
+                <p class="policy-text">
+                    (주)인터파크트리플은 항공사가 제공하는 개별 항공권 및 여행사가 제공하는 일부 여행상품에 대하여 통신판매중개자의 지위를 가지며, 해당상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.
+                </p>
+                <p class="policy-text">
+                    항공권 또는 항공권이 포함된 경우, 표시되는 상품요금은 예상 유류할증료와 제세공과금이 포함된 가격이며, 발권일/환율 등에 따라 변동될 수 있습니다.
+                </p>
+                <p class="policy-text">
+                    (주)인터파크트리플은 인터파크티켓, 인터파크투어의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 (주)인터파크트리플은 일체 책임을 지지 않습니다.
+                </p>
+                <p class="policy-text">
+                    Copyright ⓒ InterparkTriple Corp. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

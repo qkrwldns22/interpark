@@ -1,0 +1,1089 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+.header{
+    margin: 0 auto;
+    padding: 20px 60px 0 60px;
+    margin: 0 24.5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.search-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-left img {
+    width: 151px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0 10px;
+    margin-right: 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    max-width: 35px;
+}
+
+.search-button img {
+    width: 20px;
+    height: auto;
+}
+
+.search-right {
+    display: flex;
+    align-items: center;
+}
+
+.mymenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mymenu li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.mymenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    z-index: 1000; /* 메뉴가 다른 요소들 위에 표시되도록 */
+}
+
+.show {
+    display: block;
+}
+
+.mainmenu {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    align-items: center;
+}
+
+.mainmenu li {
+    margin-right: 20px; /* 항목 간의 간격 조정 */
+}
+
+.mainmenu a {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
+}
+
+.mainmenu img {
+    width: 30px;
+    margin-right: 8px; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.mainmenu span {
+    font-size: 16px; /* 텍스트 크기 */
+    color: black; /* 텍스트 색상 */
+}
+
+.mainmenu p {
+    padding: 4px;
+    font-size: 7px;
+    margin: 0 5px;
+    border-radius: 10px; /* 테두리 둥글기 설정 */
+    background-color: red;
+    color: white;
+}
+
+/* 구분선을 추가하는 CSS */
+.mainmenu li:nth-child(5) a {
+    position: relative;
+}
+
+.mainmenu li:nth-child(5) a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; /* 구분선과 텍스트 사이의 간격 */
+    height: 20px; /* 구분선의 높이 */
+    width: 1px; /* 구분선의 두께 */
+    background-color: #ccc; /* 구분선의 색상 */
+    transform: translateY(-50%);
+}
+
+.main{
+    padding: 0 60px;
+}
+
+.mainal {
+    text-align: center; /* 가운데 정렬 */
+    margin: 0 -60px; /* main의 padding을 상쇄 */
+    padding: 15px 0;
+    background-color: #f8f8f8;
+}
+
+.content-wrapper {
+    display: inline-flex; /* 같은 줄에 위치 */
+    align-items: center; /* 세로 가운데 정렬 */
+    gap: 10px; /* h3와 p 사이의 간격 */
+    text-align: center; /* 가운데 정렬 */
+    font-size: 14px;
+}
+
+.content-wrapper h3 {
+    margin: 0; /* 기본 마진 제거 */
+    color: black;
+    cursor: text;
+}
+
+.content-wrapper span{
+    color: blue;
+}
+
+.content-wrapper p {
+    margin: 0; /* 기본 마진 제거 */
+    text-decoration: underline; /* 밑줄 추가 */
+    color: #555; /* 추가적인 스타일 */
+}
+
+.eventbanner {
+    position: relative;
+    min-width: 1024px;
+    margin: 0 auto;
+    padding: 3rem 0 5rem;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides a {
+    min-width: calc(50% - 10px); /* 이미지 간의 간격을 고려한 너비 설정 */
+    margin-right: 20px; /* 이미지 간 간격 */
+}
+
+.slides a:last-child {
+    margin-right: 0; /* 마지막 요소의 오른쪽 여백 제거 */
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%; /* 버튼을 원형으로 만들기 위해 추가 */
+    box-shadow: 0 0 5px gray;
+    width: 50px; /* 너비를 설정 */
+    height: 50px; /* 높이를 설정 */
+    font-size: 24px; /* 화살표의 크기를 키우기 위해 폰트 크기를 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.tourwrap {
+    width: 100%;
+    min-width: 1024px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+.tourheader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tourmenu {
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.swiper-wrapper li {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.swiper-wrapper button {
+    background-color: white;
+    color: black;
+    height: 3rem;
+    line-height: 1rem;
+    padding: 0 1rem;
+    border-radius: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.swiper-wrapper button.active {
+    background-color: black;
+    color: white;
+}
+
+/* 슬라이더 컨테이너 설정 */
+.tslider {
+    width: 100%;
+    position: relative;
+    max-width: 100%; /* 필요한 경우 100%로 설정하여 옆 스크롤 문제를 해결 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 슬라이더 컨테이너 설정 */
+.tslides {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%; /* 필요한 경우 100%로 설정하여 옆 스크롤 문제를 해결 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* 슬라이드 전체를 담는 래퍼 */
+.tslider-wrapper, .tslider-wrapper2 {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* 전체 슬라이더의 너비를 100%로 설정 */
+}
+
+/* 각 슬라이드 아이템 설정 */
+.tslide {
+    min-width: calc(100% / 3); /* 한 화면에 3개의 슬라이드가 보이도록 설정 */
+    box-sizing: border-box;
+    padding: 10px;
+    height: 400px; /* 슬라이드 높이 고정 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tslide img {
+    width: 100%;
+    height: 250px; /* 이미지 높이 고정 */
+    object-fit: cover; /* 이미지 크기 조정 */
+    border-radius: 15px 15px 0 0; /* 상단 두 모서리 둥글게 */
+}
+
+.tslide a {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.caption {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    box-sizing: border-box;
+}
+
+.caption .tag {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.caption h3, .caption p, .caption .price {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.caption h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: blue;
+}
+
+.caption p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.caption .price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* 버튼 스타일 */
+.tprev, .tnext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    width: 50px; /* 버튼의 너비 */
+    height: 50px; /* 버튼의 높이 (너비와 동일하게 설정) */
+    cursor: pointer;
+    border-radius: 50%; /* 완전한 원을 만들기 위해 반지름을 50%로 설정 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 버튼에 그림자 추가 */
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* 화살표 크기 조정 */
+}
+
+.tprev {
+    left: -5px; /* 버튼을 부모 컨테이너 안쪽으로 위치 */
+}
+
+.tnext {
+    right: -5px; /* 버튼을 부모 컨테이너 안쪽으로 위치 */
+}
+
+.tourhomebtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tourhomebtn button{
+    background-color: white;
+    color: black;
+    height: 3.5rem;
+    line-height: 1rem;
+    padding: 0 2.5rem;
+    border-radius: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tourhomebtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.tripwrap{
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 3rem 0 6rem;
+    border: none;
+}
+
+.triptitle{
+    display: flex;
+    padding: 0 .4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlebox{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem; /* 요소 간의 간격을 좁게 설정 */
+}
+
+.tboxicon img{
+    width: 110px; /* 8.8418rem의 절반 */
+    height: auto;   /* 3.6rem의 절반 */
+}
+
+.ticon2 img{
+    max-width: 80%;
+    height: auto;
+    margin-right: -0.8rem; /* 오른쪽 여백을 음수로 설정 (필요시) */
+}
+
+.titlebox2 h3{
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pslider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 16px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: calc(100% + 16px);
+}
+
+.product-card {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 0 calc(25% - 16px);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.product-info {
+    margin-top: 7px;
+    padding: 13px;
+    flex-grow: 1;
+}
+
+.badge {
+    position: absolute; /* 이미지와 경계선 사이에 배치되도록 절대 위치 설정 */
+    top : 58%; /* 이미지의 아래에서 15px 위로 설정 */
+    left: 15px; /* 왼쪽에서 15px 떨어진 위치에 배치 */
+    background: linear-gradient(70deg, #4fc8d0 ,#ecb4e9, #92decc); /* 왼쪽에서 오른쪽으로 색상이 변하도록 그라데이션 설정 */
+    color: black; /* 텍스트 색상 설정 */
+    padding: 5px 10px; /* 배지의 내부 여백 설정 */
+    border-radius: 15px; /* 둥근 모서리 설정 */
+    font-size: 0.8rem; /* 텍스트 크기 설정 */
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    color: #333;
+    line-height: 24px; /* 줄 간격을 설정 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 최대 2줄까지만 표시 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 넘치는 텍스트를 '...'로 표시 */
+    white-space: normal;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pprev, .pnext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    display: none; /* 기본적으로 숨김 */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.pprev {
+    left: 0;
+}
+
+.pnext {
+    right: 0;
+}
+/* 여기까지 w트립 슬라이더 내용 */
+
+.wtripbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.wtripbtn button{
+    background-color: white;
+    color: black;
+    height: 3.5rem;
+    line-height: 1rem;
+    padding: 0 2.5rem;
+    border-radius: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wtripbtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.ranktitle{
+    text-align: center;
+    margin-top: -30px;
+}
+
+.ranktitle h2 {
+    margin-bottom: 3px; /* h2와 p 사이의 간격을 5px로 설정 */
+    font-size: 30px;
+}
+
+.ranktitle p {
+    margin-top: 0; /* p 요소의 상단 여백을 없앰 */
+    font-size: 18px;
+}
+
+.tswiper-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tswiper-wrapper li {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.tswiper-wrapper button {
+    background-color: white;
+    color: black;
+    height: 3rem;
+    line-height: 1rem;
+    padding: 0 1rem;
+    border-radius: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tswiper-wrapper button.active {
+    background-color: black;
+    color: white;
+}
+
+.rankslide, .rankslide2 {
+    position: relative;
+    width: 100%;
+}
+
+.rankslides-wrapper, .rankslides-wrapper2 {
+    overflow: hidden; /* 슬라이더의 넘치는 부분을 숨김 */
+    width: 100%;
+}
+
+.rankslides, .rankslides2 {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rankslides img, .rankslides2 img {
+    border-radius: 15px;
+}
+
+.rankslides a, .rankslides2 a {
+    flex: 0 0 calc(25% - 24px); /* 한 번에 4개씩 보이도록 설정 */
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.rankslides h2, .rankslides2 h2{
+    color: black;
+    font-size: 20px;
+    margin-bottom: -10px;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 보여줄 줄 수 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 전체보기 */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* 부모 요소의 높이를 기준으로 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin-top: 150px; /* 내용 전체를 아래로 이동시킴 */
+}
+
+#allview {
+    width: 60px;
+    margin-bottom: 0px; /* 텍스트와 이미지 사이의 간격 */
+}
+
+.rankslides h3 {
+    color: black;
+    font-size: 15px;
+    margin-top: 0; /* 상단 마진을 없애거나 조정 */
+}
+
+#rp1 {
+    color: grey; /* rp1에 대한 텍스트 색상 설정 */
+    font-size: 15px; /* rp1에 대한 글자 크기 설정 */
+    margin-bottom: 5px; /* rp1과 아래 요소 사이의 간격 설정 */
+}
+
+#rp2 {
+    color: gray; /* rp2에 대한 텍스트 색상 설정 */
+    font-size: 15px; /* rp2에 대한 글자 크기 설정 */
+    margin-top: 5px; /* rp2과 위 요소 사이의 간격 설정 */
+}
+
+#rp3 {
+    color: rgb(231, 55, 55);
+    border: 1px solid rgb(231, 55, 55);
+    border-radius: 3px;
+    text-align: center;
+    width: 50px;
+    padding: 5px;
+    margin-top: -5px;
+    font-size: 11px;
+}
+
+#rp4 {
+    color: rgb(63, 63, 235);
+    border: 1px solid rgba(91, 105, 226, 0.405);
+    border-radius: 3px;
+    text-align: center;
+    width: 50px;
+    padding: 5px;
+    margin-top: -5px;
+    font-size: 11px;
+}
+
+.rprev, .rnext {
+    position: absolute;
+    top: 40%; /* 슬라이드 중앙에 위치시키기 위해 */
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* 버튼이 다른 요소들 위에 보이도록 설정 */
+    display: flex; /* 항상 표시되도록 */
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.rprev {
+    left: 0px;
+}
+
+.rnext {
+    right: 0px;
+}
+
+.rankhomebtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.rankhomebtn button{
+    background-color: white;
+    color: black;
+    height: 3.5rem;
+    line-height: 1rem;
+    padding: 0 2.5rem;
+    border-radius: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rankhomebtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.livetitle {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.livetitle img{
+    width: 150px
+}
+
+.liveslide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0; /* 상하 패딩 추가 */
+    box-sizing: border-box; /* 패딩이 width에 포함되도록 */
+}
+
+.liveslides {
+    display: flex;
+    gap: 20px; /* 슬라이드 간격을 20px로 설정 */
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* 슬라이드를 가운데 정렬 */
+}
+
+.slide-item {
+    position: relative;
+    flex: 0 0 300px; /* 슬라이드 크기를 300px로 고정 */
+    height: 440px; /* 슬라이드 높이 설정 */
+    list-style-type: none;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover; /* 이미지 비율 유지 및 슬라이드 크기에 맞게 조정 */
+}
+
+.slide-content {
+    position: absolute;
+    top: 10px;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+.label {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: white;
+}
+
+.date, .time {
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+.date{
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.time{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.livegobtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.livegobtn button{
+    background-color: white;
+    color: black;
+    height: 3.5rem;
+    line-height: 1rem;
+    padding: 0 2.5rem;
+    border-radius: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.livegobtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.footer{
+    margin-top: 50px;
+    overflow: hidden;
+    min-width: 1280px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(230, 230, 230);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "맑은 고딕", "Malgun Gothic", 돋움, Dotum, Helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+.shortcutmenu{
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.shortcut-menu{
+    padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1280px;
+    height: 50px;
+    margin: 0px auto;
+    list-style: none;
+}
+
+.shortcut-menu li{
+    left: -20px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    font-size: 13px;
+}
+
+.shortcut-menu li::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 35%; /* 텍스트 높이와 비슷하게 설정 */
+    width: 1px;
+    background-color: rgb(230, 230, 230);
+}
+
+.shortcut-menu li:last-child::after {/*랭귀지 옆 경계선 제거*/
+    content: none;
+}
+
+.shortcut-menu a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+#bold{
+    color: black;
+    font-weight: 700;
+}
+
+.fmenu-item {
+    position: relative;
+    padding: 14px 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.fsubmenu {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: -5px;
+    min-width: 100px;
+    z-index: 1;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.fsubmenu a {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.fsubmenu a:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 수정된 부분: fsubmenu 클래스를 사용하여 드롭다운 메뉴 표시 */
+.fmenu-item:hover .fsubmenu {
+    display: block;
+}
+
+.company-license{
+    display: flex;
+    width: 1280px;
+    margin: 0px auto;
+    padding: 30px 60px;
+}
+
+.company-title{
+    color: rgb(17, 17, 17);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.companya{
+    color: skyblue;
+}
+
+.company-text, .company-text2{
+    margin-top: -8px;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+
+.license2, .license3{
+    padding-left: 100px;
+}
+
+.company-license__ContactLink-sc-c0ef972b-4 {
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+
+.company-text2 a {
+    padding-right: 4px;
+    border-right: 1px solid gray;
+    position: relative;
+}
+
+.company-text2 a:last-child {
+    border-right: none; /* 마지막 항목의 경계선을 없앱니다 */
+}
+
+.company-policy{
+    width: 1280px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.policy-text{
+    color: rgba(17, 17, 17, 0.5);
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
