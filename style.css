@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     border: 0;
     outline: 0;
-    max-width: 1400px; /* 최대 너비 설정 */
+    max-width: 1425px; /* 최대 너비 설정 */
     max-height: 900px;
 }
 
@@ -707,7 +707,7 @@ p {
     margin-bottom: 0px; /* 텍스트와 이미지 사이의 간격 */
 }
 
-.rankslides h3 {
+.rankslides h3, .rankslides2 h3 {
     color: black;
     font-size: 15px;
     margin-top: 0; /* 상단 마진을 없애거나 조정 */
@@ -942,13 +942,13 @@ h3 {
 }
 
 .shortcut-menu{
-    padding: 0 60px;
+    padding: 0 20px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 1280px;
+    max-width: 1280px;
     height: 50px;
-    margin: 0px auto;
     list-style: none;
 }
 
@@ -1080,8 +1080,10 @@ h3 {
 /* 일정 크기 이상일 때 좌우 마진 추가 */
 @media (min-width: 1600px) {
     body {
-        max-width: 1400px; /* 최대 너비 고정 */
+        max-width: 1425px; /* 최대 너비 고정 */
         margin-left: auto;
         margin-right: auto;
     }
+
+
 }
