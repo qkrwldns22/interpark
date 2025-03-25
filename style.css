@@ -1,9 +1,10 @@
-.body {
+html, body {
     margin: 0 auto; /* 화면 중앙 정렬 */
     padding: 0;
     border: 0;
     outline: 0;
     max-width: 1400px; /* 최대 너비 설정 */
+    max-height: 900px;
 }
 
 .header{
@@ -1078,7 +1079,7 @@ h3 {
 
 /* 일정 크기 이상일 때 좌우 마진 추가 */
 @media (min-width: 1600px) {
-    .body {
+    body {
         max-width: 1400px; /* 최대 너비 고정 */
         margin-left: auto;
         margin-right: auto;
