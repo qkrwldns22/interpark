@@ -1085,8 +1085,14 @@ h3 {
         margin-right: auto;
     }
 
+    /*footer 메뉴 드롭다운 부분 크기조정*/
     .shortcut-menu li{
         left: -20px;
         padding: 10px 20px;
+    }
+
+    /*footer 고객센터 랭귀지 드롭다운 메뉴 크기 조절*/
+    .fsubmenu a {
+        padding: 15px 10px;
     }
 }
