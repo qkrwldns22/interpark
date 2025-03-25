@@ -1080,13 +1080,13 @@ h3 {
 /* 일정 크기 이상일 때 좌우 마진 추가 */
 @media (min-width: 1600px) {
     body {
-        max-width: 1450px; /* 최대 너비 고정 */
+        max-width: 1425px; /* 최대 너비 고정 */
         margin-left: auto;
         margin-right: auto;
     }
 
-    .shortcut-menu{
-        padding: 0;
-        margin: 0 auto;
+    .shortcut-menu li{
+        left: -20px;
+        padding: 10px 20px;
     }
 }
