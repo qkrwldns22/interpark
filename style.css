@@ -1080,6 +1080,7 @@ h3 {
 @media (min-width: 1600px) {
     .body {
         max-width: 1400px; /* 최대 너비 고정 */
-        margin: 0 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
