@@ -1094,7 +1094,7 @@ h3 {
     /*footer 고객센터 랭귀지 드롭다운 메뉴 크기 조절*/
     .fsubmenu a {
         padding: 14px 10px;
-        line-height: 1.2;
+        line-height: 0.9;
         text-decoration: none;
         display: block;
     }
